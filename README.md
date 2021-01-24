@@ -142,6 +142,13 @@ python main_POMFQ_ising.py
 
 We would like to cite the [MAgent](https://github.com/geek-ai/MAgent) for the source files for the three game domains used in this paper. We have modified these domains to be partially observable as described in the code structure. We would like to cite [MFRL](https://github.com/mlii/mfrl) for the source code of MFQ, MFAC and IL used as baselines and also for the Ising model environment. Both these repositories are under the MIT license. 
 
+
+## Note
+
+This is research code and will not be actively maintained. Please send an email to ***s2ganapa@uwaterloo.ca*** for questions or comments. 
+
+
+
 ## Paper citation
 
 If you found this helpful, please cite the following paper:
