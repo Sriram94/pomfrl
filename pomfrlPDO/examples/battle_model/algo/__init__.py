@@ -1,0 +1,34 @@
+from . import ac
+from . import q_learning
+from . import rnnq_learning
+
+AC = ac.ActorCritic
+MFAC = ac.MFAC
+IL = q_learning.DQN
+
+rnnIL = rnnq_learning.DQN
+rnnMFQ = rnnq_learning.MFQ
+
+MFQ = q_learning.MFQ
+POMFQ = q_learning.POMFQ
+POMFQV1 = q_learning.POMFQV1
+
+
+def spawn_ai(algo_name, sess, env, handle, human_name, max_steps):
+    if algo_name == 'mfq':
+        model = MFQ(sess, human_name, handle, env, max_steps, memory_size=80000)
+    elif algo_name == 'mfac':
+        model = MFAC(sess, human_name, handle, env)
+    elif algo_name == 'ac':
+        model = AC(sess, human_name, handle, env)
+    elif algo_name == 'il':
+        model = IL(sess, human_name, handle, env, max_steps, memory_size=80000)
+    elif algo_name == 'rnnIL':
+        model = rnnIL(sess, human_name, handle, env, max_steps, memory_size=80000)
+    elif algo_name == 'rnnMFQ':
+        model = rnnMFQ(sess, human_name, handle, env, max_steps, memory_size=80000)
+    elif algo_name == 'pomfq':
+        model = POMFQ(sess, human_name, handle, env, max_steps, memory_size=80000)
+    elif algo_name == 'pomfqv1':
+        model = POMFQV1(sess, human_name, handle, env, max_steps, memory_size=80000)
+    return model
