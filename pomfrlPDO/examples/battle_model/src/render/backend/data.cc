@@ -2,7 +2,7 @@
 #include <fstream>
 #include <sstream>
 #ifdef __linux__
-    #include <json/json.h>
+    #include <jsoncpp/json/json.h>
 #else
     #include <json/json.h>
 #endif
