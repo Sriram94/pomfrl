@@ -159,7 +159,7 @@ If you found this helpful, please cite the following paper:
 
 @InProceedings{Srirampomfrl2021,
   title = 	 {Partially Observable Mean Field Reinforcement Learning},
-  author = 	 {Subramanian, Sriram Ganapathi and Taylor, Matthew and Crowley, Mark and Poupart, Pascal} 
+  author = 	 {Subramanian, Sriram Ganapathi and Taylor, Matthew E. and Crowley, Mark and Poupart, Pascal} 
   booktitle = 	 {Proceedings of the International Conference on Autonomous Agents and Multi Agent Systems (AAMAS 2021)},
   year = 	 {2021},
   editor = 	 {U. Endriss, A. Nowé, F. Dignum, A. Lomuscio},
